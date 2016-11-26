@@ -1,0 +1,116 @@
+<style>
+.probcontent{
+    white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+.mainp{
+	text-indent: 2em;
+}
+.tableborder{
+	border-collapse:collapse;
+	width: auto;
+}
+.tableborder td{
+    border:1px solid #fcfaf2;
+	padding: 0px 10px 0px 10px;
+}
+</style>
+<center>
+<h1>有緣千里來相會，無緣對面不相逢</h1>
+<h4>本題有測資，但正確性未知</h4>
+</center>
+<p class="mainp">
+到了一年好幾度的出門比賽(社遊)時間了，其中的故事就不細數了。時間來到在台北車站要準備回台南，在一陣混亂之中，小穹和婕兒走散了XD(?)，於是她們借助艾咪的新店(?)感應Lv.5知道兩人在哪裡，於是決定要在一個她們能夠同時到達的地方，快來幫幫她們吧。PS.她們前往集合地點都會走最短路徑。
+</p>
+<p class="mainp">
+給定一張連通的簡單圖及兩點$A,B$，求出距離$A$最短距離等於距離$B$最短距離的所有點。
+</p>
+
+<h3>輸入說明</h3>
+<p class="probcontent">單筆測資
+第一行有兩個正整數$N,S$，代表有$N$個點、$S$條邊
+第二行有兩個正整數，代表$A,B$的點編號
+接下來有$S$行，每行有$3$個正整數$C,D,L$，代表$C$和$D$之間有一條長度為$L$的邊
+$N \leq 10^{5} ； S \leq min( \frac{N(N-1)}{2} , 2 \times 10^{5} )； 1 \leq A,B,\forall{C},\forall{D} \leq N ； 0 &lt; \forall{L} \leq 10^{7}$
+</p>
+
+<h3>輸出說明</h3>
+<p class="probcontent">輸出所有符合的點
+格式請輸出$E~F~P$
+若$E = F ； P = 0$，代表點在原本的頂點$E$上
+若$E &lt; F$，代表點在$\overline{EF}$上，距離$E$的$P\%$（$P$四捨五入到整數位）
+若邊上所有點都是答案，輸出這條邊的兩端點
+輸出請先依$E$再依$F$由小到大排序
+</p>
+
+<h3>範例</h3>
+<table class="tableborder">
+<tr><td>輸入</td><td>輸出</td><td>說明</td></tr>
+<tr>
+<td valign="top"><p class="probcontent">4 4
+1 2
+1 3 5
+2 3 4
+2 4 5
+3 4 8
+</p></td>
+<td valign="top"><p class="probcontent">1 3 90
+</p></td>
+<td valign="top"><p class="probcontent"><img src="img1.png">
+</p></td>
+</tr>
+<tr>
+<td valign="top"><p class="probcontent">4 5
+1 2
+1 3 4
+1 4 5
+2 3 4
+2 4 5
+3 4 3
+</p></td>
+<td valign="top"><p class="probcontent">3 3 0
+4 4 0
+</p></td>
+<td valign="top"><p class="probcontent"><img src="img2.png">
+</p></td>
+</tr>
+<tr>
+<td valign="top"><p class="probcontent">4 5
+2 4
+1 2 8
+1 4 4
+2 3 10
+2 4 12
+3 4 6
+</p></td>
+<td valign="top"><p class="probcontent">1 2 25
+2 3 80
+2 4 50
+</p></td>
+<td valign="top"><p class="probcontent"><img src="img3.png">
+</p></td>
+</tr>
+</table>
+
+<h3>提示</h3>
+<p class="probcontent">Dijkstra's algorithm
+</p>
+
+<h3>配分方法</h3>
+<table class="tableborder">
+<tr><td>Test</td><td>Weight</td><td>$N$</td><td>$S$</td><td>$L$</td></tr>
+<tr><td>1-5</td><td>10%</td><td>$N \leq 10$</td><td>$S = N-1$</td><td>$L \leq 10$</td></tr>
+<tr><td>6-10</td><td>10%</td><td>$N \leq 10$</td><td></td><td>$L \leq 10$</td></tr>
+<tr><td>11-15</td><td>10%</td><td>$N \leq 10^{2}$</td><td>$S = N-1$</td><td>$L \leq 10^{2}$</td></tr>
+<tr><td>16-20</td><td>10%</td><td>$N \leq 10^{2}$</td><td></td><td>$L \leq 10^{2}$</td></tr>
+<tr><td>21-25</td><td>10%</td><td>$N \leq 10^{3}$</td><td>$S = N-1$</td><td>$L \leq 10^{3}$</td></tr>
+<tr><td>26-30</td><td>10%</td><td>$N \leq 10^{3}$</td><td>$S \leq 10^{5}$</td><td>$L \leq 10^{3}$</td></tr>
+<tr><td>31-35</td><td>10%</td><td>$N \leq 10^{4}$</td><td>$S = N-1$</td><td>$L \leq 10^{5}$</td></tr>
+<tr><td>36-40</td><td>10%</td><td>$N \leq 10^{4}$</td><td>$S \leq 10^{5}$</td><td>$L \leq 10^{5}$</td></tr>
+<tr><td>41-45</td><td>10%</td><td>題目範圍</td><td>$S = N-1$</td><td>題目範圍</td></tr>
+<tr><td>46-50</td><td>10%</td><td>題目範圍</td><td>題目範圍</td><td>題目範圍</td></tr>
+</table>
+
+<pre><footer>								-xiplus, JAN 25, 2016</footer></pre>
