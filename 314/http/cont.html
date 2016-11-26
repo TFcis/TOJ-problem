@@ -1,0 +1,79 @@
+<style>
+.probcontent{
+    white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+.mainp{
+	text-indent: 2em;
+}
+.tableborder{
+	border-collapse:collapse;
+	width: auto;
+}
+.tableborder td{
+    border:1px solid #fcfaf2;
+	padding: 0px 10px 0px 10px;
+}
+</style>
+<center>
+<h1>$xiplus$的貪食蛇</h1>
+</center>
+<p class="mainp">
+由於$xiplus$寫完了TOJ228喵喵的貪食蛇，於是就把遊戲變得更難了，於是你只好玩著超難的貪食蛇。但是實在是太難了，只好寫個程式幫忙了。現在想要知道最多移動$K$格，能夠吃到幾個食物。
+</p>
+<p class="mainp">
+在貪食蛇這個遊戲中，你會操縱一隻蛇，在$R \times S$的地圖上移動。由於這個遊戲還是喵喵寫的，所以底下是新遊戲的規則。
+<ul>
+<li>一開始所有食物就會出現在地圖上。</li>
+<li>一開始時會位於左下角（第1行第1個），且面向右邊那格（第1行第2個），長度為1格。</li>
+<li>遊戲只能用按鈕"A"和按鈕"B"操作。</li>
+<li>當按下按鈕"A"的時候，蛇會往前（面向的方向）走1格。</li>
+<li>當按下按鈕"B"的時候，蛇會往上移動一格，並旋轉180度。</li>
+<li>當蛇碰到了食物，他會吃了食物，但不會像原遊戲那樣變長。</li>
+</ul>
+</p>
+<p class="mainp">
+</p>
+
+<h3>輸入說明</h3>
+<p class="probcontent">第一行有1個正整數$T$，代表有幾筆測資。
+每筆測試資料第一行有4個整數$R,S,K,F$，表示地圖的高度和寬度、最多爬幾格、食物的數量。
+接下來有$F$行，每行有2的正整數$L,X$，表示食物在第$L$行第$X$個。
+$1 \leq T \leq 10$
+$1 \leq R,S \leq 10^{3}$
+$1 \leq L \leq R$
+$1 \leq X \leq S$
+$1 \leq K,F \leq R \times S$
+</p>
+
+<h3>輸出說明</h3>
+<p class="probcontent">對於每筆測資，輸出一行一個整數，代表最多能吃到幾個食物。
+</p>
+
+<h3>範例</h3>
+<table class="tableborder">
+<tr><td>輸入</td><td>輸出</td></tr>
+<tr>
+<td valign="top"><p class="probcontent">1
+5 5 4 6
+2 1
+3 1
+4 1
+5 1
+1 5
+5 5
+</p></td>
+<td valign="top"><p class="probcontent">4
+</p></td>
+</tr>
+</table>
+
+<h3>配分方法</h3>
+<table class="tableborder">
+<tr><td>$50\%$</td><td>$K \leq 10^{2}$</td></tr>
+<tr><td>$50\%$</td><td>$F \leq 10^{2}$</td></tr>
+</table>
+
+<pre><footer>								-xiplus, FEB 19, 2016</footer></pre>
