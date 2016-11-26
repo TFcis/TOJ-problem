@@ -1,0 +1,68 @@
+<style>
+pre{
+    white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+h1{
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+</style>
+<meta charset="utf-8">
+</head><body><center>
+<h1>桌面圖示</h1>
+</center>
+
+<p>
+社寵長不喜歡在桌面使用自動排列圖示，她總是將桌面圖示擺得亂亂的，有一天她妹妹たかめ少女xiplus無聊在框選桌面圖示，發現一次框選的桌面圖示數量有時無法達到，所以她想知道可以選出的個數有多少。
+</p>
+
+<h3>輸入說明</h3>
+單筆測資。<br>
+第1行有3個數字$K,W,H$，分別代表有多少圖示、畫面寬度、畫面高度。<br>
+接下來有$K$行，每一行有2個整數$X,Y$，代表圖示座標。<br>
+$K \leq 1000 ； 0 < \forall X \leq W < 2^{31} ； 0 < \forall Y \leq H < 2^{31}$
+
+<h3>輸出說明</h3>
+輸出可選取的種類數。
+
+<h3>範例輸入 1</h3>
+<pre>
+4
+2 2
+1 1
+1 2
+2 1
+2 2
+</pre>
+<h3>範例輸出 1</h3>
+<pre>
+3
+</pre>
+
+<h3>範例輸入 2</h3>
+<pre>
+4
+3 2
+1 1
+1 2
+2 1
+3 2
+</pre>
+<h3>範例輸出 2</h3>
+<pre>
+4
+</pre>
+
+<h3>範例說明</h3>
+<img src="img.png" width="900px">
+
+<h3>提示/注意事項</h3>
+一個座標只能擺放一個圖示
+
+<h3>配分方法</h3>
+範測 $100\%$
+
+<footer>								-Xiplus, OCT 2015</footer>
