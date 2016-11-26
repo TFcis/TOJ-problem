@@ -1,0 +1,73 @@
+<style>
+.probcontent{
+    white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+.mainp{
+	text-indent: 2em;
+}
+.tableborder{
+	border-collapse:collapse;
+	width: auto;
+}
+.tableborder td{
+    border:1px solid #fcfaf2;
+	padding: 0px 10px 0px 10px;
+}
+</style>
+<center>
+<h1>多輸出及行尾換行練習題</h1>
+</center>
+<p class="mainp">
+程式競賽中有時答案是很多個，像是排序後輸出，這時就會要求以空白隔開，而$judge$通常是嚴格比對答案，這時若是行尾有個空白就會得到$WA$，這題是要讓你們練習輸出的。另外行尾換行也是很重要的，沒有輸出也是會拿到$WA$。
+</p>
+<p class="mainp">
+題目很簡單，只是輸入後輸出而已，連排序都不用，請依指定的字元隔開，這題你要注意行尾不可以多餘的東西輸出，另外要換行。
+</p>
+
+<h3>輸入說明</h3>
+<p class="probcontent">單筆測資
+第一行有$1$個正整數$N$和$1$個字元$C$，用$1$個空白隔開
+第二行有$N$個整數$A_i$
+$1 \leq N \leq 100 ； C為ASCII可顯示字符，可以用char儲存 ； 1 \leq \forall A_i \leq 10000$
+</p>
+
+<h3>輸出說明</h3>
+<p class="probcontent">將第二行的數字以$C$隔開後輸出，注意行尾不可有多餘字元，並且要換行
+</p>
+
+<h3>範例</h3>
+<table class="tableborder">
+<tr><td>輸入</td><td>輸出</td></tr>
+<tr>
+<td valign="top"><p class="probcontent">3 +
+2016 1 2
+</p></td>
+<td valign="top"><p class="probcontent">2016+1+2
+</p></td>
+</tr>
+<tr>
+<td valign="top"><p class="probcontent">5 *
+5 3 1 4 2
+</p></td>
+<td valign="top"><p class="probcontent">5*3*1*4*2
+</p></td>
+</tr>
+</table>
+
+<h3>提示</h3>
+<p class="probcontent">看清楚題目
+標準輸入輸出
+$char$
+$ASCII$
+</p>
+
+<h3>配分方法</h3>
+<table class="tableborder">
+<tr><td>$90\%$</td><td>題目範圍</td></tr>
+<tr><td>$10\%$</td><td>題目範圍</td></tr>
+</table>
+
+<pre><footer>								-xiplus, JAN 2, 2016</footer></pre>
