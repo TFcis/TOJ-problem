@@ -1,0 +1,10 @@
+{
+	"timelimit":3000,
+	"memlimit":524288,
+	"compile":"g++",
+	"score":"rate",
+	"check":"diff",
+	"test":[
+		{"data":[1],"weight":100	}
+	]
+}

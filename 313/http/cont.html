@@ -1,0 +1,82 @@
+<style>
+.probcontent{
+    white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+.mainp{
+	text-indent: 2em;
+}
+.tableborder{
+	border-collapse:collapse;
+	width: auto;
+}
+.tableborder td{
+    border:1px solid #fcfaf2;
+	padding: 0px 10px 0px 10px;
+}
+</style>
+<center>
+<h1>$jill$的貪食蛇</h1>
+</center>
+<p class="mainp">
+由於$jill$寫不出TOJ228喵喵的貪食蛇，於是生氣地把地圖上的食物吃光了，於是你只好玩著沒有食物的貪食蛇。但是實在是太無聊了，貪食的$jill$要你算一下貪食蛇爬到第$L$行第$X$個有幾種不同的方法，答案可能很大，請模$M$後輸出。
+</p>
+<p class="mainp">
+在貪食蛇這個遊戲中，你會操縱一隻蛇，在寬度為$R$、高度無限的地圖上移動。由於這個遊戲還是喵喵寫的，所以底下是新遊戲的規則。
+<ul>
+<li>一開始時會位於左下角（第1行第1個），且面向右邊那格（第1行第2個），長度為1格。</li>
+<li>遊戲只能用按鈕"A"和按鈕"B"操作。</li>
+<li>當按下按鈕"A"的時候，蛇會往前（面向的方向）走1格。</li>
+<li>當按下按鈕"B"的時候，蛇會往上移動一格，並旋轉180度。</li>
+<li>由於沒有食物，所以蛇永遠不會變長。</li>
+</ul>
+</p>
+<p class="mainp">
+</p>
+
+<h3>輸入說明</h3>
+<p class="probcontent">第一行有1個正整數$T$，代表有幾筆測資，接下來有$T$行
+每行有4個正整數$R,L,X,M$，依序代表地圖寬度、要爬到的行數和那行第幾個、答案要模多少。
+$1 \leq T \leq 10$
+$1 \leq R,L \leq 10^{4}$
+$1 \leq X \leq R$
+$M \leq 10^{9}$
+</p>
+
+<h3>輸出說明</h3>
+<p class="probcontent">對於每筆測資
+輸出爬到那個位置有幾種方法
+</p>
+
+<h3>範例</h3>
+<table class="tableborder">
+<tr><td>輸入</td><td>輸出</td></tr>
+<tr>
+<td valign="top"><p class="probcontent">7
+7 1 1 10
+7 2 2 10
+7 3 3 100
+7 4 4 1000
+7 5 5 1000
+7 6 6 100000
+7 6 6 100
+</p></td>
+<td valign="top"><p class="probcontent">1
+6
+18
+102
+575
+1288
+88
+</p></td>
+</tr>
+</table>
+
+<h3>配分方法</h3>
+<table class="tableborder">
+<tr><td>$100\%$</td><td>題目範圍</td></tr>
+</table>
+
+<pre><footer>								-xiplus, FEB 17, 2016</footer></pre>
