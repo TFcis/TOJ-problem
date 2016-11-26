@@ -1,0 +1,55 @@
+<style>
+.probcontent{
+    white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+.mainp{
+	text-indent: 2em;
+}
+.tableborder{
+	border-collapse:collapse;
+	width: auto;
+}
+.tableborder td{
+    border:1px solid #fcfaf2;
+	padding: 0px 10px 0px 10px;
+}
+</style>
+<center>
+<h1>整數格子點</h1>
+</center>
+<p class="mainp">
+社寵長在上課學到要算格子點的題目，但覺得一個一個數太慢了，所以來求助她妹妹たかめ少女xiplus。
+</p>
+
+<h3>輸入說明</h3>
+<p class="probcontent">第一行有一個數字$T$，接下來$T$行<br>
+每一行有6個數字$x_{1}~y_{1}~x_{2}~y_{2}~x_{3}~y_{3}$，為三個點的座標，皆為整數<br>
+$T \leq 10^{4} ； -10^{3} \leq x_{1},y_{1},x_{2},y_{2},x_{3},y_{3} \leq 10^{3}$
+</p>
+
+<h3>輸出說明</h3>
+<p class="probcontent">對於每行測資
+輸出三角形內的格子點數(含邊界)。
+</p>
+
+<h3>範例</h3>
+<table class="tableborder">
+<tr><td>輸入</td><td>輸出</td></tr>
+<tr><td>1<br>3 7 -2 -2 7 -1</td><td>42</td></tr>
+</table>
+
+<h3>提示</h3>
+<p class="probcontent">寫的好的話，退化三角形也會AC
+</p>
+
+<h3>配分方法</h3>
+<table class="tableborder">
+<tr><td>$0\%$</td><td>範例</td></tr>
+<tr><td>$50\%$</td><td>兩股平行$X,Y$軸的直角三角形</td></tr>
+<tr><td>$50\%$</td><td>題目範圍</td></tr>
+</table>
+
+<pre><footer>								-xiplus, NOV 6, 2015</footer></pre>
