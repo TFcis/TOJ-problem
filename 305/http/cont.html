@@ -1,0 +1,86 @@
+<style>
+.probcontent{
+    white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+.mainp{
+	text-indent: 2em;
+}
+.tableborder{
+	border-collapse:collapse;
+	width: auto;
+}
+.tableborder td{
+    border:1px solid #fcfaf2;
+	padding: 0px 10px 0px 10px;
+}
+</style>
+<center>
+<h1>日期的計算</h1>
+</center>
+<p class="mainp">
+たかめ少女$xiplus$最喜歡在半夜$12$點問她姐姐社寵長$Jill$今天星期幾，當然$Jill$都因為沒注意到已經過了$12$點而被被騙得團團轉囉，快來幫幫她吧。
+</p>
+<p class="mainp">
+後來たかめ少女$xiplus$的問題越來越多了。所以請寫一個程式，給定年、月、日、星期中$3$個，計算出剩餘一個。
+</p>
+
+<h3>輸入說明</h3>
+<p class="probcontent">多筆測資
+每行有$1$個字元$C$和$3$個整數$X,Y,Z$
+$C$代表要詢問的答案，Y是年、M是月、D是日、W是星期
+$X,Y,Z$依序代表年、月、日、星期中除了詢問的其他三個
+$C$為Y，$X,Y,Z$依序為月、日、星期
+$C$為M，$X,Y,Z$依序為年、日、星期
+$C$為D，$X,Y,Z$依序為年、月、星期
+$C$為W，$X,Y,Z$依序為年、月、日
+輸入保證在$2001/1/1$至$2100/12/31$之間，輸出也只需計算這個區間即可
+星期用0~6表示，0是星期日
+測資筆數 $\leq 100000$
+</p>
+
+<h3>輸出說明</h3>
+<p class="probcontent">對於每筆測資輸出一行
+輸出所有符合的答案，以空白隔開
+</p>
+
+<h3>範例</h3>
+<table class="tableborder">
+<tr><td>輸入</td><td>輸出</td><td>說明</td></tr>
+<tr>
+<td valign="top"><p class="probcontent">Y 1 3 0
+M 2016 3 0
+D 2016 1 0
+W 2016 1 3
+</p></td>
+<td valign="top"><p class="probcontent">2010 2016 2021 2027 2038 2044 2049 2055 2066 2072 2077 2083 2094 2100
+1 4 7
+3 10 17 24 31
+0
+</p></td>
+<td valign="top"><p class="probcontent">$1$月$3$日星期日有哪幾年?
+$2016$年$3$日是星期日有哪幾月?
+$2016$年$1$月是星期日有哪幾天?
+$2016$年$1$月$3$日是星期幾?
+</p></td>
+</tr>
+</table>
+
+<h3>提示</h3>
+<p class="probcontent">求你指教我們怎樣數算自己的日子、好叫我們得著智慧的心。 --《聖經》《詩篇》$90$篇$12$節
+羅馬教宗格列哥里十三世頒布新曆法(公曆)，把$1582/10/4$的後一天改為$1582/10/15$
+請小心不要輸出不存在的日子
+</p>
+
+<h3>配分方法</h3>
+<table class="tableborder">
+<tr><td>$20\%$</td><td>年</td></tr>
+<tr><td>$20\%$</td><td>月</td></tr>
+<tr><td>$20\%$</td><td>日</td></tr>
+<tr><td>$20\%$</td><td>星期</td></tr>
+<tr><td>$20\%$</td><td>題目範圍</td></tr>
+</table>
+
+<pre><footer>								-xiplus, JAN 3, 2016</footer></pre>
