@@ -1,0 +1,116 @@
+<style>
+pre{
+    white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+h1{
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+</style>
+<meta charset="utf-8">
+<center>
+<h1>畸形的哭力怕</h1>
+2014 上學期留社考 廢除
+</center>
+
+<p>
+哭力怕國裡有很多哭力怕，有正常的哭力怕，也有畸形的哭力怕，但是所有的哭力怕的臉最多有四個邊。聖誕夜那天哭力怕國王在野外打獵，捕獲了一隻野生的哭力怕，國王覺得它的臉很畸形，想測量一下這個多邊形，並且推估是哪種形狀。<br>
+PS.在哭力怕國，圓弧也算一個邊
+</p>
+
+<h3>輸入說明</h3>
+多筆測資。<br>
+每一筆測資有4個整數$A,B,C,D$，"依序"代表各邊的長度$(-10 < A,B,C,D < 10^{7})$<br>
+
+<h3>輸出說明</h3>
+對每一筆測資，輸出多邊形種類以及面積(至小數2位，不合法輸出$-1$)<br>
+後來國王發現有些哭力怕的臉的一些邊極小根本是0，請依照下述分類<br>
+<br>
+若有任一邊為負或4個邊皆為零，為不合法多邊形，請輸出$Illegal Polygon$<br>
+<br>
+若有3個邊為零，請將剩餘一邊當作圓周長，輸出$Circle$以及圓面積<br>
+<br>
+若有2個邊為零，請將剩餘較長邊當作圓半徑，較短邊當作扇形所對圓弧長，輸出$Sector$以及扇形面積<br>
+<br>
+若有1個邊為零，請將剩餘的邊當作三角形，可分為4種：<br>
+$Acute Triangle$ 銳角三角形<br>
+$Right Triangle$ 直角三角形<br>
+$Obtuse Triangle$ 鈍角三角形<br>
+$Illegal Triangle$ 不合法三角形<br>
+<br>
+其餘的當作四邊形，可分出5種：<br>
+$Parallelogram$ 平行四邊形<br>
+$Kite$ 箏形<br>
+$Rhombus$ 菱形<br>
+$Other Quadrilateral$ 其他種類四邊形<br>
+$Illegal Quadrilateral$ 不合法四邊形<br>
+<br>
+偷偷告訴你，國王發現四邊形面積最大時必為圓內接四邊形，所以請輸出最大面積<br>
+
+<h3>公式</h3>
+海龍公式：三角形面積$=\sqrt{p(p-a)(p-b)(p-c)}$，其中$a,b,c$為三邊長，$p$為半周長$=\frac{a+b+c}{2}$<br>
+婆羅摩笈多公式：四邊形面積$=\sqrt{(p-a)(p-b)(p-c)(p-d)}$，其中$a,b,c,d$為四邊長，$p$為半周長$=\frac{a+b+c+d}{2}$<br>
+
+<img src="img.jpg" width="500px">
+<h3>範例輸入</h3>
+<pre>
+0 0 0 0
+3 4 5 -1
+10 0 0 0
+0 5 3 0
+0 3 4 4
+3 0 4 5
+3 4 0 6
+3 4 7 0
+3 5 3 5
+3 3 5 5
+3 3 3 3
+3 4 5 6
+3 4 5 12
+</pre>
+<h3>範例輸出</h3>
+<pre>
+Illegal Polygon -1
+Illegal Polygon -1
+Circle 7.96
+Sector 7.50
+Acute Triangle 5.56
+Right Triangle 6.00
+Obtuse Triangle 5.33
+Illegal Triangle -1
+Parallelogram 15.00
+Kite 15.00
+Rhombus 9.00
+Other Quadrilateral 18.97
+Illegal Quadrilateral -1
+</pre>
+<h3>提示/注意事項</h3>
+菱形屬於平行四邊形也屬於箏形，但是答案要獨立出來
+
+<h3>配分方法</h3>
+<style>
+.testdata{
+text-align:center;
+border: 1px solid;
+} 
+</style>
+<table class="testdata" border="1" cellpadding="3" style="border-collapse:collapse;border:none;width: auto;">
+<tr><td></td><td>小測資<br><10<sup>2</td><td>大測資<br><10<sup>7</td></tr>
+<tr><td>Illegal Polygon</td><td colspan="2">1%</td></tr>
+<tr><td>Circle</td><td>4%</td><td>5%</td></tr>
+<tr><td>Sector</td><td>4%</td><td>5%</td></tr>
+<tr><td>Acute Triangle</td><td>4%</td><td>5%</td></tr>
+<tr><td>Right Triangle</td><td>4%</td><td>5%</td></tr>
+<tr><td>Obtuse Triangle</td><td>4%</td><td>5%</td></tr>
+<tr><td>Illegal Triangle</td><td>4%</td><td>5%</td></tr>
+<tr><td>Parallelogram</td><td>4%</td><td>5%</td></tr>
+<tr><td>Kite</td><td>4%</td><td>5%</td></tr>
+<tr><td>Rhombus</td><td>4%</td><td>5%</td></tr>
+<tr><td>Other Quadrilateral</td><td>4%</td><td>5%</td></tr>
+<tr><td>Illegal Quadrilateral</td><td>4%</td><td>5%</td></tr>
+</table>
+
+<footer>								-Xiplus, NOV 2014</footer>
