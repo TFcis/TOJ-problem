@@ -1,0 +1,83 @@
+<style>
+.probcontent{
+    white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+.mainp{
+	text-indent: 2em;
+}
+.tableborder{
+	border-collapse:collapse;
+	width: auto;
+}
+.tableborder td{
+    border:1px solid #fcfaf2;
+	padding: 0px 10px 0px 10px;
+}
+</style>
+<center>
+<h1>$Word$</h1>
+</center>
+<p class="mainp">
+$Word$的列印功能只能選取起始與結束頁碼及張數，現在有一個檔案要列印，每頁需要印的數量不一樣，請規畫最佳的方法使得發送列印命令的次數最少。
+</p>
+<p class="mainp">
+另外因為紙有多一些，所以可以多印幾張是不需要的浪費來減少命令次數。
+</p>
+
+<h3>輸入說明</h3>
+<p class="probcontent">單筆測資
+第一行有$2$個整數$P,N$，分別為頁數以及可浪費的張數
+第二行有$P$的整數$A_1\sim A_P$，$A_i$代表第$i$頁要印幾張
+$P \leq 1000 ； 0 \leq \forall A_i \leq 1000$
+</p>
+
+<h3>輸出說明</h3>
+<p class="probcontent">輸出最少須發送幾次命令
+</p>
+
+<h3>範例</h3>
+<table class="tableborder">
+<tr><td>輸入</td><td>輸出</td><td>說明</td></tr>
+<tr>
+<td valign="top"><p class="probcontent">5 0
+4 5 2 3 2
+</p></td>
+<td valign="top"><p class="probcontent">4
+</p></td>
+<td valign="top"><p class="probcontent">$P_1*4 + P_2*5 + P_{3\sim5}*2 + P_4*1$
+</p></td>
+</tr>
+<tr>
+<td valign="top"><p class="probcontent">5 1
+4 5 2 3 2
+</p></td>
+<td valign="top"><p class="probcontent">3
+</p></td>
+<td valign="top"><p class="probcontent">$P_{1\sim2}*5 + P_{3\sim5}*2 + P_4*1$ 此時$P_1$多印一張
+</p></td>
+</tr>
+<tr>
+<td valign="top"><p class="probcontent">5 3
+4 5 2 3 2
+</p></td>
+<td valign="top"><p class="probcontent">2
+</p></td>
+<td valign="top"><p class="probcontent">$P_{1\sim2}*5 + P_{3\sim5}*3$ 此時$P_{1,3,5}$各多印一張
+</p></td>
+</tr>
+</table>
+
+<h3>提示</h3>
+<p class="probcontent">
+</p>
+
+<h3>配分方法</h3>
+<table class="tableborder">
+<tr><td>$99\%$</td><td>$A,B &lt; 10$</td></tr>
+<tr><td>$1\%$</td><td>$A,B &lt; 100$</td></tr>
+</table>
+
+<pre><footer>								-xiplus, JAN 7, 2016</footer></pre>
