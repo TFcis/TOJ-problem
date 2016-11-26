@@ -1,0 +1,109 @@
+<style>
+.probcontent{
+    white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+.mainp{
+	text-indent: 2em;
+}
+.tableborder{
+	border-collapse:collapse;
+	width: auto;
+}
+.tableborder td{
+    border:1px solid #fcfaf2;
+	padding: 0px 10px 0px 10px;
+}
+</style>
+<center>
+<h1>空白紙回收</h1>
+</center>
+<p class="mainp">
+社寵長正在邊吃午餐邊coding，好吧上一句不是重點。她前面有幾張計算紙，那是廢紙回收來用的，好吧這也不是重點。反正資訊社裡有個放廢紙回收的箱子，放在地板格子編號$2-1$(從$0$開始)。要用廢紙時就從紙堆頂拿取，有廢紙就從頂端放進去。然而有些人拿紙時要求紙的空白量要足夠，會從頂端取出一張紙放到旁邊，直到符合要求的空白程度，取出所要的之後，把其他取出的紙放回去(這時拿出來部分的順序會反向)，找不到符合的紙時就算了。另外有時會有人來整理紙堆。
+</p>
+
+<h3>輸入說明</h3>
+<p class="probcontent">單筆測資
+每行第一個整數代表操作種類
+$1$ 代表放入一張紙，接著一個整數$M$，代表紙的空白程度
+$2$ 代表取出紙，接著一個整數$M$，代表要求紙的空白程度至少有$M$
+$3$ 代表整理紙堆，從頂部由小排到大
+$4$ 代表整理紙堆，從頂部由大排到小
+$5$ 代表整理紙堆，接著一個整數$M$，代表將空白程度$\leq M$的紙取出丟掉(留下紙順序不變)
+$0$ 代表結束輸入
+
+操作$\leq 1000 ； 1 \leq M \leq 10000$
+</p>
+
+<h3>輸出說明</h3>
+<p class="probcontent">從頂部輸出最後紙堆空白程度順序
+</p>
+
+<h3>範例</h3>
+<table class="tableborder">
+<tr><td>輸入</td><td>輸出</td><td>說明</td><td>紙堆順序(從頂)</td></tr>
+<tr>
+<td valign="top"><p class="probcontent">1 10
+1 9
+1 8
+1 7
+1 6
+1 5
+1 4
+1 3
+1 2
+1 1
+2 6
+3
+4
+5 3
+0
+</p></td>
+<td valign="top"><p class="probcontent">10 9 8 7 5 4
+</p></td>
+<td valign="top"><p class="probcontent">放入程度10
+放入程度9
+放入程度8
+放入程度7
+放入程度6
+放入程度5
+放入程度4
+放入程度3
+放入程度2
+放入程度1
+取程度大於6的紙
+從小排到大
+從大排到小
+把紙程度小於等於3的紙取出
+結束輸入
+</p></td>
+<td valign="top"><p class="probcontent">10
+9 10
+8 9 10
+7 8 9 10
+6 7 8 9 10
+5 6 7 8 9 10
+4 5 6 7 8 9 10
+3 4 5 6 7 8 9 10
+2 3 4 5 6 7 8 9 10
+1 2 3 4 5 6 7 8 9 10
+5 4 3 2 1 7 8 9 10
+1 2 3 4 5 7 8 9 10
+10 9 8 7 5 4 3 2 1
+10 9 8 7 5 4
+</p></td>
+</tr>
+</table>
+
+<h3>提示</h3>
+<p class="probcontent">沒有
+</p>
+
+<h3>配分方法</h3>
+<table class="tableborder">
+<tr><td>$100\%$</td><td>題目範圍</td></tr>
+</table>
+
+<pre><footer>								-xiplus, NOV 7, 2015</footer></pre>
