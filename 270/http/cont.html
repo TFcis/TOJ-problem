@@ -1,0 +1,79 @@
+<style>
+pre{
+    white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+h1{
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+</style>
+<meta charset="utf-8">
+<center>
+<h1>公車</h1>
+</center>
+
+<p>
+車上很擠，目前已知所有人上下車站次，請安排最佳方式，讓所有人越過其他人的總次數最小。
+</p>
+
+<h3>輸入說明</h3>
+單筆測資。<br>
+第1行有1個數字$K$代表有多少人，接下來有$K$行，每一行有2個整數$M,N$，分別代表這個人上車及下車的站。<br>
+$K \leq 10000 ； M,N \leq 100$
+
+<h3>輸出說明</h3>
+輸出"最小"總共移動次數。
+
+<h3>範例輸入</h3>
+<pre>
+4
+1 6
+2 4
+2 5
+3 6
+</pre>
+
+<h3>範例輸出</h3>
+0
+
+<h3>範例說明</h3>
+<pre>
+|空|
+
+第1站  A從頭上
+A|空|
+|A|
+
+第2站  BC從尾上
+|A|CB
+|ACB|
+
+第3站  D從頭上
+D|ABC|
+|DACB|
+
+第4站  B從尾下
+|DACB|
+|DAC|B
+
+第5站  C從尾下
+|DAC|
+|DA|C
+
+第6站  AD從尾下
+|DA|
+|空|DA
+
+合計移動次數=0
+</pre>
+
+<h3>提示/注意事項</h3>
+所有的人都有下車。
+
+<h3>配分方法</h3>
+範測 $100\%$
+
+<footer>								-Xiplus, OCT 2015</footer>
