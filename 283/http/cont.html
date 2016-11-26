@@ -1,0 +1,95 @@
+<style>
+.probcontent{
+    white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+.mainp{
+	text-indent: 2em;
+}
+.tableborder{
+	border-collapse:collapse;
+	width: auto;
+}
+.tableborder td{
+    border:1px solid #fcfaf2;
+	padding: 0px 10px 0px 10px;
+}
+</style>
+<center>
+<h1>$1A2B~solver$</h1>
+</center>
+<p class="mainp">請寫一個程式，幫助使用者玩 $1A2B$ ，依照使用者的輸入，輸出符合規則且最小值作為建議答案
+</p>
+
+<h3>輸入說明</h3>
+<p class="probcontent">多筆測資
+每行為 $2$ 個正整數 $n,m$ ，代表 $nAmB$
+當輸入 $4~0$ 代表使用者答對了，請開始新的一題
+如果你輸出正確，輸入會對應你上次的輸出
+如果你隨意輸出，就送你 $WA$
+$0 \leq n,m \leq 4 ； 題數 \leq 10^{5}$
+</p>
+
+<h3>輸出說明</h3>
+<p class="probcontent">輸出符合的最小建議答案
+當然一開始沒有條件時建議答案是 $0123$
+</p>
+
+<h3>範例</h3>
+<table class="tableborder">
+<tr><td>輸入</td><td>輸出</td><td>說明</td></tr>
+<tr>
+<td valign="top"><p class="probcontent">1 1
+0 1
+0 1
+3 0
+2 1
+4 0
+0 1
+0 2
+1 3
+1 3
+4 0
+</p></td>
+<td valign="top"><p class="probcontent">0123
+0245
+1463
+2178
+2179
+2198
+0123
+1456
+2547
+4572
+5742
+0123
+</p></td>
+<td valign="top"><p class="probcontent">0123 1A1B
+0245 0A1B
+1463 0A1B
+2178 3A0B
+2179 2A1B
+2198 4A0B
+0123 0A1B
+1456 0A2B
+2547 1A3B
+4572 1A3B
+5742 4A0B 
+</p></td>
+</tr>
+</table>
+
+<h3>提示</h3>
+<p class="probcontent">注意範測
+保證有答案
+</p>
+
+<h3>配分方法</h3>
+<table class="tableborder">
+<tr><td>$1\%$</td><td>BJ4</td></tr>
+<tr><td>$99\%$</td><td>符合題目範圍</td></tr>
+</table>
+
+<pre><footer>								-xiplus, NOV 27(Their birthday), 2015</footer></pre>
