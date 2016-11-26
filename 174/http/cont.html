@@ -1,0 +1,77 @@
+<style>
+.probcontent{
+    white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+.mainp{
+	text-indent: 2em;
+}
+.tableborder{
+	border-collapse:collapse;
+	width: auto;
+}
+.tableborder td{
+    border:1px solid #fcfaf2;
+	padding: 0px 10px 0px 10px;
+}
+</style>
+<center>
+<h1>解聯立方程組</h1>
+</center>
+<p class="mainp">
+社寵長在上課學到要解聯立方程組的題目，但由於太遜了聽不懂，所以來求助她妹妹たかめ少女xiplus。
+</p>
+
+<h3>輸入說明</h3>
+<p class="probcontent">第一行有一個數字$T$，接下來$T$組測資
+每一組的第一行有一個正整數$N$，代表$N$元一次方程組
+接下來有$N$行，每行有$N+1$個數字
+每行形如$a_1,a_2,a_3,...,a_n,b$
+代表$a_1x_1+a_2x_2+a_3x_3+...+a_nx_n=b$
+$T \leq 1000 ； -1000 \leq \forall a_i \leq 1000$
+</p>
+
+<h3>輸出說明</h3>
+<p class="probcontent">對於每組測資
+輸出解的情況，有：
+infinitely many solutions.
+a single unique solution.
+no solution.
+</p>
+
+<h3>範例</h3>
+<table class="tableborder">
+<tr><td>輸入</td><td>輸出</td></tr>
+<tr><td valign="top">
+<p class="probcontent">3
+1
+2 6
+2
+1 1 3
+2 2 4
+3
+1 1 1 3
+2 2 2 6
+3 3 3 9</p>
+</td><td valign="top">
+<p class="probcontent">a single unique solution.
+no solution.
+infinitely many solutions.</p>
+</td></tr>
+</table>
+
+<h3>提示</h3>
+<p class="probcontent">問問$Gaussian$吧
+</p>
+
+<h3>配分方法</h3>
+<table class="tableborder">
+<tr><td>$0\%$</td><td>範例</td></tr>
+<tr><td>$10\%$</td><td>一元方程式</td></tr>
+<tr><td>$10\%$</td><td>二元方程式</td></tr>
+<tr><td>$80\%$</td><td>題目範圍</td></tr>
+</table>
+
+<pre><footer>								-xiplus, NOV 11, 2015</footer></pre>
