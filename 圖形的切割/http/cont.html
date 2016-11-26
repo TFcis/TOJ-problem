@@ -1,0 +1,111 @@
+<style>
+.probcontent{
+    white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+.mainp{
+	text-indent: 2em;
+}
+.tableborder{
+	border-collapse:collapse;
+	width: auto;
+}
+.tableborder td{
+    border:1px solid #fcfaf2;
+	padding: 0px 10px 0px 10px;
+}
+img.img{
+	width:250px;
+	height:550px;
+	background:url("img.jpg") 290px 0px;
+}
+</style>
+<center>
+<h1>圖形的切割</h1>
+<h2>本題題目尚未定義，所以沒有測資 (可以寫多測資A+B拿AC)</h2>
+</center>
+<p class="mainp">
+給定一個所有邊皆平行$X,Y$軸的長方形，問最少的切割數(本題尚未定義)，使其切割後所有形狀皆為長方形。
+</p>
+<center><img class="img"></center>
+<p class="mainp">
+(本題尚未定義)切割數的詢問可以分成 A.刀數 B.塊數 ，另外切割可以分成 A.小刀 B.大刀 。小刀是指一刀兩斷，切一刀多一塊，那這樣，塊數=刀數+1；大刀是指以無限延伸的直線。圖一中，不管小刀或大刀，刀數=4、塊數=5；圖二中，小刀=4、大刀=2、塊數=5。
+</p>
+
+<h3>輸入說明</h3>
+<p class="probcontent">單筆測資
+本題使用每邊向量描述多邊形，每行有兩個整數$V,L$
+$V$代表方向，$1$是上、$2$是右、$3$是下、$4$是左
+$L$代表長度
+從原點開始描述各邊方向及長度，以"0 0"結束，保證形成封閉的簡單多邊形。
+$V = 1,2,3,4 ； 1 \leq L \leq 100 ； 長方形高及寬最大10^{9}$
+</p>
+
+<h3>輸出說明</h3>
+<p class="probcontent">輸出切割數 (本題尚未定義)
+</p>
+
+<h3>範例</h3>
+<table class="tableborder">
+<tr><td>輸入</td><td>輸出</td><td>說明</td></tr>
+<tr>
+<td valign="top"><p class="probcontent">2 5
+1 3
+2 2
+1 6
+4 4
+3 2
+4 1
+3 2
+4 1
+3 3
+4 1
+3 2
+0 0
+</p></td>
+<td valign="top"><p class="probcontent">(本題尚未定義)
+小刀=4 大刀=4 塊數=5
+</p></td>
+<td valign="top"><p class="probcontent">圖一
+從左下角開始逆時針輸入
+</p></td>
+</tr>
+<tr>
+<td valign="top"><p class="probcontent">2 2
+3 2
+2 2
+1 3
+2 1
+3 5
+2 1
+3 1
+4 3
+1 1
+4 2
+3 2
+4 1
+1 6
+0 0
+</p></td>
+<td valign="top"><p class="probcontent">(本題尚未定義)
+小刀=4 大刀=2 塊數=5
+</p></td>
+<td valign="top"><p class="probcontent">圖二
+從左上角開始順時針輸入
+</p></td>
+</tr>
+</table>
+
+<h3>提示</h3>
+<p class="probcontent">
+</p>
+
+<h3>配分方法</h3>
+<table class="tableborder">
+<tr><td>$99\%$</td><td>$A,B &lt; 10$</td></tr>
+<tr><td>$1\%$</td><td>$A,B &lt; 100$</td></tr>
+</table>
+
+<pre><footer>								-xiplus, JAN 7, 2016</footer></pre>
