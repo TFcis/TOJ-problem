@@ -1,6 +1,12 @@
 *.exe
+
 *.in
 *.out
+
 *.png
+*.jpg
+
 *.ggb
+
 WA.cpp
+AC-2.cpp
