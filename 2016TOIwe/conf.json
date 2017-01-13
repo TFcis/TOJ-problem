@@ -1,0 +1,23 @@
+{
+        "timelimit":500,
+        "memlimit":524288,
+        "compile":"makefile",
+        "score":"rate",
+        "check":"diff",
+        "test":[
+		{"data":[1],"weight":7},
+		{"data":[2],"weight":7},
+		{"data":[3],"weight":7},
+		{"data":[4],"weight":7},
+		{"data":[5],"weight":7},
+		{"data":[6],"weight":7},
+		{"data":[7],"weight":7},
+		{"data":[8],"weight":7},
+		{"data":[9],"weight":7},
+		{"data":[10],"weight":7},
+		{"data":[11],"weight":7},
+		{"data":[12],"weight":7},
+		{"data":[13],"weight":8},
+		{"data":[14],"weight":8}
+	]
+}

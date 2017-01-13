@@ -1,0 +1,200 @@
+<style>
+.probcontent{
+    white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+.mainp{
+	text-indent: 2em;
+}
+.tableborder{
+	border-collapse:collapse;
+	width: auto;
+}
+.tableborder td{
+    border:1px solid #fcfaf2;
+	padding: 0px 10px 0px 10px;
+}
+</style>
+<center>
+<h1>@. 筆試題</h1>
+</center>
+<p class="probcontent">
+1. 一個stack經過以下操作，pop出的數值依序為?
+push(8) push(1) pop() push(5) pop() push(3) push(4) pop() pop() pop()
+
+2. 以下程式碼執行結果?
+<table class="tableborder">
+<tr><td>
+<p class="probcontent">int v[][3]={{1,2,3},{4,5,6}};
+cout&lt;&lt;v[0][4];</p>
+</td></tr>
+</table>
+3. 以下程式碼執行結果?
+<table class="tableborder">
+<tr><td>
+<p class="probcontent">void f(int *p, int q[], int r){
+	p=q;
+	*q=r=3;
+}
+int main(){
+	int a=5;
+	int b[]={4,5,6};
+	int c=7;
+	f(&a,b,c);
+	printf("%d%d%d",a,b[0],c);
+}</p>
+</td></tr>
+</table>
+4. 0xFEBD 和 0xDCFE 做 OR 運算後有幾個bit是1
+
+5. 一棵二元樹的前序走訪是 12453678，中序走訪是 42513768 ，問後序走訪是?
+
+6. 有幾種a,b,c的組合不會造成無窮迴圈 
+<table class="tableborder">
+<tr><td>
+<p class="probcontent">int a,b,c;
+while( a!=3 || b&lt;3 || b&gt;7 || c!=1 ){}</p>
+</td></tr>
+</table>
+
+7. 7個節點所組成的最小生成樹可能的深度有5種，是輸出1，否輸出0
+
+8. 以下程式碼執行結果?
+<table class="tableborder">
+<tr><td>
+<p class="probcontent">int s;
+int f(int n){
+	if(n){
+		s+=n%10;
+		n/=10;
+		f(n);
+	}else {
+		return s;
+	}
+}
+int main(){
+	printf("%d",f(12345678));
+}</p>
+</td></tr></table>
+9. 以下程式碼執行結果?
+<table class="tableborder">
+<tr><td>
+<p class="probcontent">switch(2){
+	default:
+		printf("%d",4);
+	case 0:
+		printf("%d",5);
+	case 1:
+		printf("%d",6);
+	case 2:
+		printf("%d",7);
+}</p>
+</td></tr></table>
+10. 題目我忘了，答案寫0就好
+
+11. 2隻NANA可以換1隻艾咪，2隻NANA和1隻艾咪可以換1隻小穹，1隻NANA和2隻小穹可以換1隻婕兒，問1隻婕兒要幾隻NANA換來?
+
+12. 輸入0~9，有幾個可能會造成RE
+<table class="tableborder">
+<tr><td>
+<p class="probcontent">int v[10];
+void del(int n){
+	for(int i=n-1;i>=0;i--){
+		v[i]=v[i+1];
+	}
+}
+int main(){
+	for(int i=0;i<10;i++)v[i]=i;
+	int n;
+	cin>>n;
+	del(n);
+}</p>
+</td></tr></table>
+13. 現在每個格子裡有一些球，當格子裡的球數等於編號時，才可以把那格的球拿走放到編號0的格子裡，而拿走球時，左邊的格子都會多一顆球，要把所有球移到編號0的格子裡，現在已經操作15，問操作順序是?(答案包含15，中間不可以有空白)
+<table class="tableborder">
+<tr><td>編號</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+<tr><td>起始</td><td></td><td>o</td><td>o</td><td>o</td><td>ooo</td><td>ooooo</td></tr>
+<tr><td>操作1</td><td>o</td><td></td><td>o</td><td>o</td><td>ooo</td><td>ooooo</td></tr>
+<tr><td>操作5</td><td>o x7</td><td>o</td><td>oo</td><td>oo</td><td>oooo</td><td></td></tr>
+</table>
+14. 現在相隔兩地的人用煙火傳遞訊息，煙火有兩種樣式O和X，現在訊息傳送是XOXOXOXX，問說意義的可能組合有幾種?
+<table class="tableborder">
+<tr><td>意義A</td><td>XO</td></tr>
+<tr><td>意義B</td><td>O</td></tr>
+<tr><td>意義C</td><td>XX</td></tr>
+<tr><td>意義D</td><td>XOX</td></tr>
+<tr><td>意義E</td><td>OXO</td></tr>
+</table>
+
+格式錯誤會CE
+沒有作答視為WA
+答案有非數字字元會RE
+</p>
+
+<h3>輸入說明</h3>
+<p class="probcontent">本題沒有輸入
+</p>
+
+<h3>輸出說明</h3>
+<p class="probcontent">每行請輸出2個整數，以1個空白隔開，前面為題號，後面為答案
+檔案開頭請加上
+R"(
+檔案末尾請加上
+)"
+若沒有加上會CE
+</p>
+
+<h3>範例</h3>
+<table class="tableborder">
+<tr><td>輸入</td><td>輸出</td><td>說明</td></tr>
+<tr>
+<td valign="top"><p class="probcontent">本題沒有輸入
+</p></td>
+<td valign="top"><p class="probcontent">R"(
+1 101
+2 202
+4 404
+5 505
+6 606
+7 707
+8 808
+9 909
+10 1010
+11 1111
+12 1212
+13 1313
+14 1414
+)"
+</p></td>
+<td valign="top"><p class="probcontent">必要的開頭，缺少會CE
+第1題答案是101
+第2題答案是202
+第3題沒有回答
+
+
+
+
+(略)
+
+
+
+
+
+必要的結尾，缺少會CE
+</p></td>
+</tr>
+</table>
+
+<h3>提示</h3>
+<p class="probcontent">注意答案格式
+</p>
+
+<h3>配分方法</h3>
+<table class="tableborder">
+<tr><td>1~12</td><td>7%</td></tr>
+<tr><td>13~14</td><td>8%</td></tr>
+</table>
+
+<pre><footer>								-xiplus, MAR 7, 2016</footer></pre>
