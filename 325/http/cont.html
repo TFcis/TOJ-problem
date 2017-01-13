@@ -1,0 +1,70 @@
+<style>
+.probcontent{
+    white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+.mainp{
+	text-indent: 2em;
+}
+.tableborder{
+	border-collapse:collapse;
+	width: auto;
+}
+.tableborder td{
+    border:1px solid #fcfaf2;
+	padding: 0px 10px 0px 10px;
+}
+</style>
+<center>
+<h1>D. 走格子</h1>
+</center>
+<p class="mainp">
+小穹和NANA在玩一個特別的遊戲，規則是兩人一開始都在座標上原點(0,0)，接著投出數次骰子，兩人都可以選擇自己要往上(y正)或往右(x正)走，最後離原點直線距離最短的人就贏了。
+</p>
+<p class="mainp">
+但小穹發現陰險的NANA竟然請婕兒幫她在骰子上動手腳，於是小穹也請婕兒幫忙，讓骰子擲出的數字能夠事先知道，這下小穹知道等下骰子會出現的點數了，快幫她想個方法獲勝吧。
+</p>
+
+<h3>輸入說明</h3>
+<p class="probcontent">單筆測資
+第一行有1個整數$N$，代表擲了幾次骰子
+第二行有$N$個整數，代表擲出的骰子點數
+$0 \leq N \leq 1000$
+$1 \leq 骰子點數 \leq 2000$
+</p>
+
+<h3>輸出說明</h3>
+<p class="probcontent">輸出最後會停在哪一格距離最近
+請輸出兩個數字分別是X座標和Y座標
+必須 $X座標 \leq Y座標$
+</p>
+
+<h3>範例</h3>
+<table class="tableborder">
+<tr><td>輸入</td><td>輸出</td></tr>
+<tr>
+<td valign="top"><p class="probcontent">4
+1 2 3 4
+</p></td>
+<td valign="top"><p class="probcontent">5 5
+</p></td>
+</tr>
+<tr>
+<td valign="top"><p class="probcontent">5
+1 2 3 4 5
+</p></td>
+<td valign="top"><p class="probcontent">7 8
+</p></td>
+</tr>
+</table>
+
+<h3>配分方法</h3>
+<table class="tableborder">
+<tr><td>25%</td><td>$N \leq 4 ； 骰子點數 \leq 100$</td></tr>
+<tr><td>25%</td><td>$N \leq 10 ； 骰子點數 \leq 100$</td></tr>
+<tr><td>50%</td><td>題目範圍</td></tr>
+</table>
+
+<pre><footer>								-type by xiplus, MAR 7, 2016</footer></pre>

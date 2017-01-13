@@ -1,0 +1,71 @@
+<style>
+.probcontent{
+    white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+.mainp{
+	text-indent: 2em;
+}
+.tableborder{
+	border-collapse:collapse;
+	width: auto;
+}
+.tableborder td{
+    border:1px solid #fcfaf2;
+	padding: 0px 10px 0px 10px;
+}
+</style>
+<center>
+<h1>C. 文件索引</h1>
+<h4>本題目前只有範測</h4>
+</center>
+<p class="mainp">
+亦晨拿著小穹依著ASCII順序整理好的文件要送去服務台，沒想到笨拙的亦晨跌了一跤，把文件的順序都弄亂了，但小穹用她神奇的瞳術看了就發現亂掉的文件卻形成另一種新的編號順序，但為了要懲罰亦晨，便要她自己找出順序，「快去給我找出來，信不信我揍妳」小穹心裡暗自地想。
+</p>
+
+<h3>輸入說明</h3>
+<p class="probcontent">多筆測資
+每筆第一行有1個整數$N$，接下來$N$個字串
+字串由數字和大小寫英文字組成
+$N = 0$表示輸入結束
+$0 \leq N \leq 30000$
+</p>
+
+<h3>輸出說明</h3>
+<p class="probcontent">對於每筆測資，輸出新的字母順序(保證有唯一解)
+</p>
+
+<h3>範例</h3>
+<table class="tableborder">
+<tr><td>輸入</td><td>輸出</td><td>說明</td></tr>
+<tr>
+<td valign="top"><p class="probcontent">5
+DCD
+BDDD
+BBBBC
+BBBBA
+C
+0
+</p></td>
+<td valign="top"><p class="probcontent">DBCA
+</p></td>
+<td valign="top"><p class="probcontent">從所有字串第1個字元得知D&lt;B&lt;C
+從第3,4個字串第5個字元得知C&lt;A
+</p></td>
+</tr>
+</table>
+
+<h3>提示</h3>
+<p class="probcontent">亦晨是小說「前進吧!! 高捷少女日常」新出現的人物，為捷運站的新人，小穹帶領的後輩。
+</p>
+
+<h3>配分方法</h3>
+<table class="tableborder">
+<tr><td>25%</td><td>$N \leq 10$</td></tr>
+<tr><td>25%</td><td>$N \leq 1000$</td></tr>
+<tr><td>50%</td><td>題目範圍</td></tr>
+</table>
+
+<pre><footer>								-type by xiplus, MAR 7, 2016</footer></pre>

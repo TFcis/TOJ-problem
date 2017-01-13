@@ -1,0 +1,102 @@
+<style>
+.probcontent{
+    white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+.mainp{
+	text-indent: 2em;
+}
+.tableborder{
+	border-collapse:collapse;
+	width: auto;
+}
+.tableborder td{
+    border:1px solid #fcfaf2;
+	padding: 0px 10px 0px 10px;
+}
+</style>
+<center>
+<h1>A. 整理書櫃</h1>
+<h4>本題有測資，但正確性未知</h4>
+</center>
+<p class="mainp">
+艾咪很愛看書，她有一個很大的書櫃，「書櫃只有一格」，所以她只好把書疊成一疊塞在同一格。當她想要看某本書時，就去書櫃裡找，如果沒有就會去買一本，看完之後再放到書櫃，因此書多到書櫃放不下，所以她有2種整理舊書的方法。
+</p>
+<p class="mainp">
+方法一：如果有找到書，看完之後會放回書堆頂端。如果沒有書，買來的書也放在頂端。如果書櫃放不下了，就把最底下那本書丟掉。
+</p>
+<p class="mainp">
+方法二：如果有找到書，看完之後會放回原位。如果沒有書，買來的書如果有空位就放在書堆最下面，沒空位就把最久沒看過的書丟掉，並放到丟掉的書的位置。
+</p>
+<p class="mainp">
+請寫一個程式模擬書櫃的狀態。
+</p>
+
+<h3>輸入說明</h3>
+<p class="probcontent">單筆測資
+第一行有2個正整數$N,C$，$N$代表書櫃可以放幾本書，$C$代表操作方法
+第二行有許多整數，代表艾咪想看的書編號
+第三行有一個查詢資料$K$
+$1 \leq N \leq 50000$
+$C = 1,2,3$
+$第二行整數個數 \leq 500000$
+$0 \leq 第二行整數範圍 \leq 1000000$
+</p>
+
+<h3>輸出說明</h3>
+<p class="probcontent">若$C=1$，請判斷最後編號$K$的書有沒有在書櫃裡，若有輸出"YES"(不含引號)，沒有輸出"NO"(不含引號)。
+若$C=2$，艾咪使用方法一整理書，請由上到下輸出書的編號。
+若$C=2$，艾咪使用方法二整理書，請由上到下輸出書的編號。
+</p>
+
+<h3>範例</h3>
+<table class="tableborder">
+<tr><td>輸入</td><td>輸出</td></tr>
+<tr>
+<td valign="top"><p class="probcontent">3 1
+1 2 3 4 5 6 4 5
+6
+</p></td>
+<td valign="top"><p class="probcontent">YES
+</p></td>
+</tr>
+<tr>
+<td valign="top"><p class="probcontent">3 2
+1 2 3 4 5 6 4 5
+5
+</p></td>
+<td valign="top"><p class="probcontent">5 4 6
+</p></td>
+</tr>
+<tr>
+<td valign="top"><p class="probcontent">3 3
+1 2 3 4 5 6 4 5
+5
+</p></td>
+<td valign="top"><p class="probcontent">6 5 4
+</p></td>
+</tr>
+<tr>
+<td valign="top"><p class="probcontent">5 2
+1 2 3 2
+1
+</p></td>
+<td valign="top"><p class="probcontent">2 3 1
+</p></td>
+</tr>
+</table>
+
+<h3>範例說明</h3>
+<p class="probcontent">範例說明
+</p>
+
+<h3>配分方法</h3>
+<table class="tableborder">
+<tr><td>20%</td><td>$1 \leq N \leq 5 ； 資料個數 \leq 10$</td></tr>
+<tr><td>30%</td><td>$1 \leq N \leq 50 ； 資料個數 \leq 1000$</td></tr>
+<tr><td>50%</td><td>題目範圍</td></tr>
+</table>
+
+<pre><footer>								-type by xiplus, MAR 7, 2016</footer></pre>

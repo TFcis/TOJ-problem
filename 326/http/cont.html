@@ -1,0 +1,69 @@
+<style>
+.probcontent{
+    white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+.mainp{
+	text-indent: 2em;
+}
+.tableborder{
+	border-collapse:collapse;
+	width: auto;
+}
+.tableborder td{
+    border:1px solid #fcfaf2;
+	padding: 0px 10px 0px 10px;
+}
+</style>
+<center>
+<h1>E. 二進位數字</h1>
+<h4>本題有測資，但正確性未知</h4>
+</center>
+<p class="mainp">
+婕兒正在做一台能將十進位數字轉成二進位數字的計算機，快來幫幫她吧。
+</p>
+<p class="mainp">
+給一個十進位數字，請轉成二進位數字，如果是二進位循環小數，請用括弧表示最短循環節，答案長度必須最短。
+</p>
+
+<h3>輸入說明</h3>
+<p class="probcontent">單筆測資
+只有1個正數$N$，代表十進位數字，可能是整數或小數
+</p>
+
+<h3>輸出說明</h3>
+<p class="probcontent">輸出二進位
+</p>
+
+<h3>範例</h3>
+<table class="tableborder">
+<tr><td>輸入</td><td>輸出</td></tr>
+<tr>
+<td valign="top"><p class="probcontent">5
+</p></td>
+<td valign="top"><p class="probcontent">101
+</p></td>
+</tr>
+<tr>
+<td valign="top"><p class="probcontent">1.6
+</p></td>
+<td valign="top"><p class="probcontent">1.(1001)
+</p></td>
+</tr>
+</table>
+
+<h3>提示</h3>
+<p class="probcontent">如果小數部分是 0110011001100...，答案 (0110) 會比 0(1100) 長度短。
+</p>
+
+<h3>配分方法</h3>
+<table class="tableborder">
+<tr><td>20%</td><td>$0 \leq N \leq 1000$</td></tr>
+<tr><td>20%</td><td>$0 \leq N \leq 10^{19}$</td></tr>
+<tr><td>20%</td><td>$0 \leq N \leq 1000 ，N的十進位小數部分長度 \leq 1$</td></tr>
+<tr><td>40%</td><td>$0 \leq N \leq 10^{19} ，N的十進位小數部分長度 \leq 6$</td></tr>
+</table>
+
+<pre><footer>								-type by xiplus, MAR 7, 2016</footer></pre>

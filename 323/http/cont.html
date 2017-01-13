@@ -1,0 +1,76 @@
+<style>
+.probcontent{
+    white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+.mainp{
+	text-indent: 2em;
+}
+.tableborder{
+	border-collapse:collapse;
+	width: auto;
+}
+.tableborder td{
+    border:1px solid #fcfaf2;
+	padding: 0px 10px 0px 10px;
+}
+</style>
+<center>
+<h1>B. 吃餅乾</h1>
+</center>
+<p class="mainp">
+婕兒很愛吃東西，總是把大家的食物都吃掉。這天NANA生氣了，規定婕兒吃東西的方法。首先婕兒要把餅乾排成一列，在上面標註數字1~N(數字順序依婕兒自訂)，NANA會公布她的數列1~N(數字順序依NANA自訂)。婕兒必須從左邊開始吃，她所吃掉的餅乾編號順序必須跟NANA給的編號順序一樣，問婕兒最多能吃掉幾片餅乾。
+</p>
+<p class="mainp">
+若NANA給的序列是1234，婕兒的序列是1324，那麼婕兒能吃124或是134才能符合NANA的序列，能吃到3塊餅乾。
+</p>
+
+<h3>輸入說明</h3>
+<p class="probcontent">第一行有2個正整數$N,K$，$N$代表餅乾數量，$K$代表婕兒提出的吃法方案數量
+第二行有$N$個整數，代表NANA提出的數列
+接下來$K$行，每行有$N$個整數，代表婕兒提出的方案
+$1 \leq N \leq 10000$
+$1 \leq K \leq 100$
+</p>
+
+<h3>輸出說明</h3>
+<p class="probcontent">對於婕兒的每個方案，輸出她
+能吃掉幾塊餅乾
+</p>
+
+<h3>範例</h3>
+<table class="tableborder">
+<tr><td>輸入</td><td>輸出</td></tr>
+<tr>
+<td valign="top"><p class="probcontent">3 3
+1 2 3
+1 2 3
+1 3 2
+3 1 2
+</p></td>
+<td valign="top"><p class="probcontent">3
+2
+2
+</p></td>
+</tr>
+<tr>
+<td valign="top"><p class="probcontent">6 2
+1 3 5 2 4 6
+1 2 3 4 5 6
+1 6 4 5 2 3
+</p></td>
+<td valign="top"><p class="probcontent">4
+3
+</p></td>
+</tr>
+</table>
+
+<h3>配分方法</h3>
+<table class="tableborder">
+<tr><td>50%</td><td>$1 \leq N \leq 20 ； K \leq 20$</td></tr>
+<tr><td>50%</td><td>題目範圍</td></tr>
+</table>
+
+<pre><footer>								-type by xiplus, MAR 7, 2016</footer></pre>
