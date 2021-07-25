@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<head>
+<style>
+pre{
+    	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+h1 {
+	margin-bottom: 8px;
+}
+</style>
+<meta charset="utf-8">
+</head>
+<body><center><h1>Determinant</h1>2014暑期國中生程式設計營 | 課程練習</center><pre>
+
+
+矩陣的性質，運算與應用是線性代數中很重要的一個部份。
+
+其中，對於二階方陣（方陣係為行數和列數相同的矩陣）定義行列式值為：
+
+
+| a   b |
+|       | = a * d - b * c
+| c   d |
+
+
+行列式值和一個矩陣的特性在許多方面都是相關的：也可以應用於處理座標幾何求取面積與體積的問題等。
+
+方陣的係數積，加法，減法，與乘法運算皆有定義。對於每一個 n 存在唯一的 n 階單位矩陣 I<sub>n</sub> ，使得任何一個 n 階矩陣與其相乘的積會是自己：
+
+AI<sub>n</sub> = A
+
+其中 A 為矩陣。
+
+而對於一個方陣 A，若有一個方陣 B 使得兩者相乘積為單位矩陣，則稱B為A的乘法反矩陣，記作 A<sup>-1</sup>。
+
+但是，不是對於任何矩陣都存在反矩陣。反矩陣的存在可以用行列式值檢查：一個方陣有乘法反方陣，若且唯若其行列式值非零。
+
+
+<strong>輸入說明</strong>
+四個實數，代表一個二階方陣的四個元。
+
+
+<strong>輸出說明</strong>
+如果反矩陣存在，輸出"1"（不包含引號，行末換行）。
+反之，則輸出"0"（不包含引號，行末換行）。
+
+
+<strong>範例輸入</strong>
+0.48455910  -20.10276173
+52.26735000 3.33629000
+
+
+<strong>範例輸出</strong>
+1
+
+
+<strong>提示：</strong>
+數值精確度要求小數點以下7位即可。
+
+<footer>
+- John, JUL 2014.
+加強測資 - xiplus, 2021.07.25
+</footer>
+</pre>
+</body>
