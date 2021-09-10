@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cp check.py check
+chmod +x check
