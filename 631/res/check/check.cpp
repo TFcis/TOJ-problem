@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
 	long double Answer, Output;
-	FILE *outf = fopen(secure_getenv("VERDICT"), "r");
+	FILE *outf = fopen(secure_getenv("OUTPUT"), "r");
 	FILE *ansf = fdopen(2, "r");
 
 	fscanf(outf, "%Lf", &Output);
