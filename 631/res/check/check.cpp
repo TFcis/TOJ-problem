@@ -3,10 +3,9 @@ using namespace std;
 
 int main() {
 	long double Answer, Output;
-	FILE *outf = fopen(secure_getenv("OUTPUT"), "r");
 	FILE *ansf = fdopen(2, "r");
 
-	fscanf(outf, "%Lf", &Output);
+	scanf("%Lf", &Output);
 	fscanf(ansf, "%Lf", &Answer);
 
 	long double Ae = abs(Answer - Output);
